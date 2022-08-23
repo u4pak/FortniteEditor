@@ -1,0 +1,67 @@
+{
+	"FileVersion": 3,
+	"EngineAssociation": "{0A6C3DCF-494B-EFC0-7D21-E2981D0BACF2}",
+	"Category": "",
+	"Description": "",
+	"Modules": [
+		{
+			"Name": "FortniteGame",
+			"Type": "Runtime",
+			"LoadingPhase": "Default",
+			"AdditionalDependencies": [
+				"OnlineSubsystemMcp",
+				"CoreUObject",
+				"Engine",
+				"NavigationSystem",
+				"AIModule",
+				"GameplayAbilities",
+				"ReplicationGraph"
+			]
+		},
+		{
+			"Name": "FortniteEditor",
+			"Type": "Editor",
+			"LoadingPhase": "PostEngineInit",
+			"AdditionalDependencies": [
+				"UnrealEd",
+				"OnlineSubsystemMcp",
+				"CoreUObject",
+				"Engine"
+			]
+		},
+		{
+			"Name": "FortniteUI",
+			"Type": "ClientOnly",
+			"LoadingPhase": "Default",
+			"AdditionalDependencies": [
+				"Engine"
+			]
+		}
+	],
+	"Plugins": [
+		{
+			"Name": "AESHandlerComponent",
+			"Enabled": true
+		},
+		{
+			"Name": "AppleARKit",
+			"Enabled": true
+		},
+		{
+			"Name": "GameplayAbilities",
+			"Enabled": true
+		},
+		{
+			"Name": "SignificanceManager",
+			"Enabled": true
+		},
+		{
+			"Name": "EditorScriptingUtilities",
+			"Enabled": true
+		},
+		{
+			"Name": "ReplicationGraph",
+			"Enabled": true
+		}
+	]
+}
