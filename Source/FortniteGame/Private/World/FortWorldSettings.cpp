@@ -33,7 +33,7 @@ void AFortWorldSettings::PostEditChangeProperty(FPropertyChangedEvent& PropertyC
 			static FVector spawn_loc(0, 0, 0);
 
 			// Spawn the Time of Day Manager.
-			TimeOfDayManager = static_cast<AFortTimeOfDayManager*>(GetWorld()->SpawnActor<AActor>(WorldTimeOfDayManager, spawn_loc, spawn_rot, SpawnInfo));
+			//TimeOfDayManager = static_cast<AFortTimeOfDayManager*>(GetWorld()->SpawnActor<AActor>(WorldTimeOfDayManager, spawn_loc, spawn_rot, SpawnInfo));
 
 			UE_LOG(LogFortWorld, VeryVerbose, TEXT("AFortWorldSettings::PostEditChangeProperty: Changed World Time Of Day Manager"));
 		}
